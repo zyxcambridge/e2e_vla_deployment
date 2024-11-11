@@ -17,35 +17,11 @@
 
 通过这三个阶段的实施，本项目期望能够推动自动驾驶技术的发展，为未来智能交通系统提供强有力的技术支持。
 
-## 2. 使用方法
-### 2.1. 安装docker
-请参考docker官方文档进行安装。
+## 2. SparseDrive Tensorrt Deploy
+https://github.com/swc-17/SparseDrive
 
-### 2.2. 下载镜像
-请使用以下命令下载镜像：
-```
-docker pull registry.cn-hangzhou.aliyuncs.com/adas_system/adas_system:latest
-```
+https://arxiv.org/html/2405.19620v2
 
-### 2.3. 运行容器
-请使用以下命令运行容器：
-```
-docker run -it --name adas_system -v /dev:/dev -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/adas_system/adas_system:/home/adas_system/adas_system -e DISPLAY=$DISPLAY registry.cn-hangzhou.aliyuncs.com/adas_system/adas_system:latest
-```
-
-### 2.4. 进入容器
-请使用以下命令进入容器：
-```
-docker exec -it adas_system /bin/bash
-```
-
-### 2.5. 运行adas系统
-请使用以下命令运行adas系统：
-```
-cd /home/adas_system/adas_system
-source /home/adas_system/adas_system/setup.bash
-ros2 launch adas_system adas_system.launch.py
-```
 
 ## 3. 注意事项
 请确保在运行adas系统之前，已经正确安装了所有依赖项，并且已经正确配置了环境变量。
