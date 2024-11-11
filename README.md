@@ -23,6 +23,6 @@ https://github.com/swc-17/SparseDrive
 https://arxiv.org/html/2405.19620v2
 
 
-## 3. 注意事项
-请确保在运行adas系统之前，已经正确安装了所有依赖项，并且已经正确配置了环境变量。
+## 3. 域控制器选型
+![alt text](image.png)
 
